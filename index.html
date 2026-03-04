@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo-mark.svg" alt="logo">
+      <span>Coding Conf</span>
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    
+    <section class="form-section" id="formSection">
+
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+
+      <form id="ticketForm">
+
+        <div class="upload-box">
+          <label  for="avatar">Upload Avatar</label>
+          <label for= "avatar" class="upload-content">
+          
+          <input type="file" id="avatarInput" accept="image">
+          <img id="avatarPreview">
+        <p>Drag and drop or click to upload</p>
+
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" id="fullName" placeholder="john doe" required>
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="input-group">
+          <label>GitHub Username</label>
+          <input type="text" id="github" placeholder="@yourusernam" required>
+        </div>
+
+        <button type="submit">Generate My Ticket</button>
+
+      </form>
+
+    </section>
+
+
+    <!-- TICKET -->
+    <section class="ticket-section hidden" id="ticketSection">
+
+      <h1>Congrats, <span id="displayName"></span>! 🎉</h1>
+      <p>Your ticket is ready.</p>
+
+      <div class="ticket">
+
+        <div class="ticket-left">
+          <h2>Coding Conf</h2>
+          <p>Jan 31, 2025 | Austin, TX</p>
+
+          <div class="ticket-user">
+            <img id="ticketAvatar">
+            <div>
+              <h3 id="ticketName"></h3>
+              <p id="ticketGithub"></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ticket-right">
+          <p>#01609</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+<script src="script.js"></script>
+
+</body>
+</html>
